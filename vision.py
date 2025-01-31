@@ -100,13 +100,13 @@ submit = st.button("Analyze Tablet Info", use_container_width=True)
 
 # Custom prompt for the tablet information summary
 input_prompt = """
-               You are an expert in understanding pharmaceutical information.
-               You will receive input images of tablets with their labels.
-               Based on the input image, you will:
-               1. Identify the name of the tablet from the label.
-               2. Search for its uses, side effects, precautions, dosage instructions, and interactions.
-               3. Provide a concise and accurate summary of the findings.
-               Ensure that the information is up-to-date and sourced from reliable medical websites.
+               You are a virtual AI Pharmacist. The user has provided the image of a tablet with its label:
+                Based on the information from the label, provide a comprehensive response that includes:
+                - The primary use or purpose of the tablet.
+                - Common and serious side effects associated with it.
+                - Any specific warnings or precautions for use.
+                - Relevant advice, such as whether it should be taken with food, timing, and dosage considerations (if applicable).
+                Ensure your response is professional, clear, and user-friendly
                """
 
 # When the analyze button is clicked
